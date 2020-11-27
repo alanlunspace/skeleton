@@ -4,7 +4,7 @@ import os
 import logging
 import logging.config
 
-log_config_filepath = open('config/logging_conf.json')
+log_config_filepath = open('config/log.json')
 log_config_json = json.load(log_config_filepath)
 log_filename = log_config_json['handlers']['file']['filename']
 log_filepath = os.path.join(os.path.dirname(os.path.realpath(__file__)), log_filename)
